@@ -41107,8 +41107,8 @@ StartChar: d
 Encoding: 100 100 8
 Width: 600
 VWidth: 0
-Flags: HW
-HStem: 0 21G<155 404.003> 1070 50<751.288 904.534>
+Flags: W
+HStem: 0 21G<155 293> 330 20G<219.429 350> 752 50<485.156 663.766>
 LayerCount: 2
 Back
 Image: 67 49 2 201 0 ffffffff -141.4 1206.8 24.1552 28.5714 0
@@ -41299,6 +41299,7 @@ SplineSet
  0 150 l 1
  0 210 l 1
 EndSplineSet
+Validated: 524321
 EndChar
 
 StartChar: e
