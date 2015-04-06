@@ -23,3 +23,7 @@ only one is chosen.
 
 Gothic scripts have two letters "s". In case of double s, one variant is used as the first letter and another
 as the second letter. In this font, only the simplest alternative is available.
+
+To modify font, open gootti.sfd using FontForge program.
+
+To use the font, install font gootti.otf
