@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1428174936
-ModificationTime: 1428350002
+ModificationTime: 1428350240
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -81,7 +81,7 @@ Grid
 -1326 350 m 25
  1718 350 l 1049
 EndSplineSet
-BeginChars: 256 26
+BeginChars: 256 27
 
 StartChar: A
 Encoding: 65 65 0
@@ -42507,6 +42507,7 @@ SplineSet
  675 800 l 1
  214 39.6328125 80 -185 -176 -601 c 1
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: u
@@ -42547,8 +42548,39 @@ EndSplineSet
 Validated: 1
 EndChar
 
+StartChar: v
+Encoding: 118 118 25
+Width: 642
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Back
+Fore
+SplineSet
+488 300 m 3x70
+ 432 300 350 234 350 178 c 3
+ 350 127 402 52 453 52 c 3
+ 504 52 591 135 591 186 c 3
+ 591 236 538 300 488 300 c 3x70
+0 210 m 1
+ 245 350 l 1
+ 329 350 l 1
+ 195 52 l 1
+ 227 52 l 1xb0
+ 227 52 316 350 495 350 c 3
+ 600 350 642 251.864257812 642 187 c 3
+ 642 85.3896484375 526 0 438 0 c 3
+ 392 0 344 40 308 125 c 1
+ 265 0 l 1
+ 123 0 l 1
+ 244 290 l 1
+ 0 149.998046875 l 1
+ 0 210 l 1
+EndSplineSet
+EndChar
+
 StartChar: w
-Encoding: 119 119 25
+Encoding: 119 119 26
 Width: 900
 VWidth: 0
 Flags: W
@@ -42558,31 +42590,31 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-746 300 m 3x70
- 690 300 608 234 608 178 c 3
- 608 127 660 51 711 51 c 3
- 762 51 849 135 849 186 c 3
- 849 236 796 300 746 300 c 3x70
-126 0 m 25
- 48 0 l 1x70
- 198 265 l 1
- 0 150 l 1
- 0 210 l 1
- 248 350 l 1
- 308 350 l 1
- 156 82 l 1
- 503 350 l 1
- 587 350 l 1
- 470 80 l 1
- 502 80 l 1xb0
- 502 80 574 350 753 350 c 3
- 858 350 900 251.864257812 900 187 c 3
- 900 85.3896484375 784 -0 696 -0 c 3
- 650 -0 603 43 573 103 c 1
- 533 0 l 1
- 381 0 l 1
- 500 280 l 1
- 126 0 l 25
+746 300 m 7x70
+ 690 300 608 234 608 178 c 7
+ 608 127 660 51 711 51 c 7
+ 762 51 849 135 849 186 c 7
+ 849 236 796 300 746 300 c 7x70
+126 0 m 29
+ 48 0 l 5x70
+ 198 265 l 5
+ 0 150 l 5
+ 0 210 l 5
+ 248 350 l 5
+ 308 350 l 5
+ 156 82 l 5
+ 503 350 l 5
+ 587 350 l 5
+ 470 80 l 5
+ 502 80 l 5xb0
+ 502 80 574 350 753 350 c 7
+ 858 350 900 251.864257812 900 187 c 7
+ 900 85.3896484375 784 -0 696 -0 c 7
+ 650 -0 603 43 573 103 c 5
+ 533 0 l 5
+ 381 0 l 5
+ 500 280 l 5
+ 126 0 l 29
 EndSplineSet
 Validated: 524289
 EndChar
