@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1428174936
-ModificationTime: 1428349250
+ModificationTime: 1428349890
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -81,7 +81,7 @@ Grid
 -1326 350 m 25
  1718 350 l 1049
 EndSplineSet
-BeginChars: 256 25
+BeginChars: 256 26
 
 StartChar: A
 Encoding: 65 65 0
@@ -42492,7 +42492,8 @@ StartChar: s
 Encoding: 115 115 23
 Width: 500
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: 780 20G<444.5 675>
 LayerCount: 2
 Back
 Fore
@@ -42506,24 +42507,26 @@ SplineSet
  675 800 l 1
  214 39.6328125 80 -185 -176 -601 c 1
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: u
 Encoding: 117 117 24
 Width: 700
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: 0 21G<48 152.714 381 472.067> 350 152G<212.571 308 364 420.5 477.104 587> 428 50<423.913 494.47>
 LayerCount: 2
 Back
 Fore
 SplineSet
-364 522 m 1
+364 522 m 1xa0
  414 522 l 17
  427 498 429 478 456 478 c 3
  483 478 493 496 504 522 c 9
  554 522 l 1
  535 473 509 428 455 428 c 3
- 395 428 386 463 364 522 c 1
+ 395 428 386 463 364 522 c 1xa0
 126 0 m 25
  48 0 l 1
  198 265 l 1
@@ -42533,7 +42536,7 @@ SplineSet
  308 350 l 1
  156 82 l 1
  503 350 l 1
- 587 350 l 1
+ 587 350 l 1xc0
  479 85 l 1
  700 210 l 1
  700 150 l 1
@@ -42542,6 +42545,47 @@ SplineSet
  500 280 l 1
  126 0 l 25
 EndSplineSet
+Validated: 1
+EndChar
+
+StartChar: w
+Encoding: 119 119 25
+Width: 900
+VWidth: 0
+Flags: W
+HStem: 0 80<470 511.205> -0 51<657.719 770.356> 300 50<677.262 802.147>
+VStem: 849 51<128.47 250.514>
+LayerCount: 2
+Back
+Fore
+SplineSet
+746 300 m 3x70
+ 690 300 608 234 608 178 c 3
+ 608 127 660 51 711 51 c 3
+ 762 51 849 135 849 186 c 3
+ 849 236 796 300 746 300 c 3x70
+126 0 m 25
+ 48 0 l 1x70
+ 198 265 l 1
+ 0 150 l 1
+ 0 210 l 1
+ 248 350 l 1
+ 308 350 l 1
+ 156 82 l 1
+ 503 350 l 1
+ 587 350 l 1
+ 470 80 l 1
+ 502 80 l 1xb0
+ 502 80 574 350 753 350 c 3
+ 858 350 900 251.864257812 900 187 c 3
+ 900 85.3896484375 784 -0 696 -0 c 3
+ 650 -0 603 43 573 103 c 1
+ 533 0 l 1
+ 381 0 l 1
+ 500 280 l 1
+ 126 0 l 25
+EndSplineSet
+Validated: 524289
 EndChar
 EndChars
 EndSplineFont
