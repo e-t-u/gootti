@@ -3,6 +3,8 @@ Gothic handwriting font
 
 This is a font for gothic handwriting in 18th and 19th centuries.
 
+![Sample](sample_abc.png)
+
 -- Only lowercase letters at this time! --
 
 This writing was used mainly in Germany but my main interest is to the variant that was used in Finland and Scandinavia
