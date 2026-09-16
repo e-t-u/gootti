@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """
-Generate vector PDF and high-res PNG specimen test sheets for the Gootti font.
+Generate vector printable PDF and specimen preview for the Gootti font.
 """
 
 import os
-import shutil
 import cairo
 import gi
 gi.require_version('Pango', '1.0')
 gi.require_version('PangoCairo', '1.0')
 from gi.repository import Pango, PangoCairo
 
-def render_specimen(pdf_path, png_path, sample_abc_path=None):
-    width_pt = 842   # A4 landscape width (595 x 842 pt)
+def render_specimens(pdf_path, png_path):
+    width_pt = 842   # A4 landscape width (842 x 595 pt)
     height_pt = 595  # A4 landscape height
     
-    # 1. Render Vector PDF
+    # 1. Render Vector Printable PDF
     surface = cairo.PDFSurface(pdf_path, width_pt, height_pt)
     cr = cairo.Context(surface)
     draw_content(cr, width_pt, height_pt)
@@ -23,7 +22,7 @@ def render_specimen(pdf_path, png_path, sample_abc_path=None):
     surface.finish()
     print(f"Generated vector PDF: {pdf_path}")
     
-    # 2. Render High-Res PNG (1684x1190 at 2x scale / ~144 DPI)
+    # 2. Render High-Res PNG Specimen (~144 DPI)
     scale = 2.0
     img_surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, int(width_pt * scale), int(height_pt * scale))
     img_cr = cairo.Context(img_surface)
@@ -31,10 +30,6 @@ def render_specimen(pdf_path, png_path, sample_abc_path=None):
     draw_content(img_cr, width_pt, height_pt)
     img_surface.write_to_png(png_path)
     print(f"Generated PNG specimen: {png_path}")
-    
-    if sample_abc_path:
-        shutil.copyfile(png_path, sample_abc_path)
-        print(f"Updated repository sample: {sample_abc_path}")
 
 def draw_content(cr, width, height):
     # Background
@@ -44,7 +39,7 @@ def draw_content(cr, width, height):
     margin_x = 45
     y = 28
     
-    # Header sans font
+    # Header
     cr.set_source_rgb(0.2, 0.2, 0.2)
     layout = PangoCairo.create_layout(cr)
     sans_desc = Pango.FontDescription('Sans 8')
@@ -83,7 +78,6 @@ def draw_content(cr, width, height):
     # Section 2: Cursive Connections
     section_header("2. CURSIVE CAPITAL CONNECTIONS")
     layout.set_font_description(Pango.FontDescription('gootti 20'))
-    
     lines_s2 = [
         "Aa  Ab  Ac  Ad  Ae  Af        Ba  Bb  Bc  Bd  Be  Bf",
         "Ca  Cb  Cc  Cd  Ce  Cf        Da  Db  Dc  Dd  De  Df",
@@ -146,6 +140,5 @@ def draw_content(cr, width, height):
 if __name__ == '__main__':
     base_dir = os.path.dirname(os.path.abspath(__file__))
     pdf = os.path.join(base_dir, 'test_specimen.pdf')
-    png = os.path.join(base_dir, 'test_specimen.png')
-    sample = os.path.join(base_dir, 'sample_abc.png')
-    render_specimen(pdf, png, sample)
+    png = os.path.join(base_dir, 'sample_abc.png')
+    render_specimens(pdf, png)
