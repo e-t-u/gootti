@@ -1,0 +1,6 @@
+*.sfd-0*
+*.sfd.bak*
+*.bak*
+*~
+gootti2.sfd
+__pycache__/
