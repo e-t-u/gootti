@@ -67,10 +67,10 @@ def draw_content(cr, width, height):
         y += 10
 
     # Section 1: Clean Capitals
-    section_header("1. CLEAN CAPITALS (A, B, C, D, E, F)")
+    section_header("1. CLEAN CAPITALS (A, B, C, D, E, F, G)")
     cr.set_source_rgb(0.05, 0.05, 0.05)
     layout.set_font_description(Pango.FontDescription('gootti 32'))
-    layout.set_text("A     B     C     D     E     F", -1)
+    layout.set_text("A     B     C     D     E     F     G", -1)
     cr.move_to(margin_x, y)
     PangoCairo.show_layout(cr, layout)
     y += 42
@@ -81,13 +81,14 @@ def draw_content(cr, width, height):
     lines_s2 = [
         "Aa  Ab  Ac  Ad  Ae  Af        Ba  Bb  Bc  Bd  Be  Bf",
         "Ca  Cb  Cc  Cd  Ce  Cf        Da  Db  Dc  Dd  De  Df",
-        "Ea  Eb  Ec  Ed  Ee  Ef        Fa  Fb  Fc  Fd  Fe  Ff"
+        "Ea  Eb  Ec  Ed  Ee  Ef        Fa  Fb  Fc  Fd  Fe  Ff",
+        "Ga  Gb  Gc  Gd  Ge  Gf"
     ]
     for line in lines_s2:
         layout.set_text(line, -1)
         cr.move_to(margin_x, y)
         PangoCairo.show_layout(cr, layout)
-        y += 24
+        y += 22
     y += 6
 
     # Section 3: Lowercase
@@ -99,12 +100,12 @@ def draw_content(cr, width, height):
     y += 44
 
     # Section 4: Historical Names
-    section_header("4. HISTORICAL NORDIC & GERMAN NAMES (CAPITALS A–F)")
+    section_header("4. HISTORICAL NORDIC & GERMAN NAMES (CAPITALS A–G)")
     layout.set_font_description(Pango.FontDescription('gootti 20'))
     lines_s4 = [
         "Adam  Albert  Bernhard  Carl  David  Daniel  Elias  Erik",
-        "Fabian  Franz  Fredric  Anna  Beata  Brita  Cecilia  Catharina",
-        "Dorothea  Elisabeth  Fredrika"
+        "Fabian  Franz  Fredric  Gustaf  Gabriel  Anna  Beata  Brita",
+        "Cecilia  Catharina  Dorothea  Elisabeth  Fredrika  Greta"
     ]
     for line in lines_s4:
         layout.set_text(line, -1)
@@ -117,7 +118,7 @@ def draw_content(cr, width, height):
     section_header("5. CHURCH RECORD SAMPLES & PANGRAMS")
     layout.set_font_description(Pango.FontDescription('gootti 20'))
     lines_s5 = [
-        "Anno domini kastetut ja syntyneet lapset Daniel Elias Fredrik",
+        "Anno domini kastetut ja syntyneet lapset Daniel Elias Fredrik Gustaf",
         "syntynyt kastettu kuollut vihitty haudattu kirkonkirja",
         "David and Franz saw the quick brown fox jump over a lazy dog"
     ]

@@ -5,7 +5,7 @@ This is a font for gothic handwriting in 18th and 19th centuries.
 
 ![Sample](sample_abc.png)
 
-Contains all lowercase letters (a–z) and uppercase capitals A–F. Standard PostScript / OpenType 1000 Em-size.
+Contains all lowercase letters (a–z) and uppercase capitals A–G. Standard PostScript / OpenType 1000 Em-size.
 
 This writing was used mainly in Germany but my main interest is to the variant that was used in Finland and Scandinavia
 to write down church records (births, marriages and deaths). The samples I have of German variant and Scandinavian
@@ -27,6 +27,8 @@ Gothic scripts have two letters "s". In case of double s, one variant is used as
 as the second letter. In this font, only the simplest alternative is available.
 
 To modify font, open gootti.sfd using FontForge program.
+
+To derive font binaries (`gootti.otf`, `gootti.ttf`, `gootti.pfb`, `gootti.afm`), run `python3 build_fonts.py`.
 
 To use the font, install font gootti.otf (or copy to `~/.local/share/fonts/`).
 
