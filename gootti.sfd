@@ -1017,7 +1017,7 @@ EndChar
 
 StartChar: D
 Encoding: 68 68 30
-Width: 843
+Width: 700
 VWidth: 989
 Flags: HMW
 HStem: 0.0102382 35.6189<225.052 238.052>
@@ -1063,7 +1063,7 @@ EndChar
 
 StartChar: E
 Encoding: 69 69 31
-Width: 648
+Width: 520
 VWidth: 975
 Flags: HMW
 HStem: 1.95129 29.2694 290.743 27.3181 578.559 24.3912
@@ -1114,7 +1114,7 @@ EndChar
 
 StartChar: F
 Encoding: 70 70 32
-Width: 700
+Width: 500
 VWidth: 975
 Flags: HMW
 HStem: 283.199 34.1418
@@ -1146,7 +1146,7 @@ EndChar
 
 StartChar: G
 Encoding: 71 71 33
-Width: 650
+Width: 520
 VWidth: 938
 Flags: HW
 LayerCount: 2
